@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquetación para el master en Frameworks de JavaScipt</title>
+    <link rel="stylesheet" href="assets/CSS/styles.css">
+    <!--en el head van metadatos-->
+</head>
+<body>
+    <!--en el body todo lo que verá el usuario-->
+    <header id="header">
+        <!--Etiqueta para centrar el contenido-->
+        <div class="center">
+
+            <!--Logo -->
+            <div id="logo">
+                <img src="assets/images/angular.svg" class="app-logo" alt="Logotipo"/>
+                <span id="brand">
+                    <strong>Curso</strong>Angular
+                </span>
+            </div>   
+            <!--Menú de navegación-->
+            <!--el nav es la etiqueta para los links que llevan a otras páginas--> 
+            <nav id="menu">
+                <ul>
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="formulario.html">Formulario</a>
+                    </li>
+                    <li>
+                        <a href="#">Página 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Página 2</a>
+                    </li>
+                </ul>
+            </nav>
+            <!--limpiar flotados para que no haya superposiciones-->
+            <div class="clearfix"></div>
+        </div>
+    </header>
+
+    <div class="center">
+        <section id="content">
+
+                <article class="article-item article-detail">
+                    <div class="image-wrap">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.C-kEwv98RxpRl-82WZHU6wHaEm%26pid%3DApi&f=1" alt="Paisaje">
+                    </div>
+                    <h1 class="subheader">Artículo de prueba</h1>
+                    <span class="date">Hace 5 minutos</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at mauris aliquam, faucibus sapien ac, dictum diam. Integer tincidunt mattis dolor, non iaculis erat venenatis et. Mauris ut tempus magna. Morbi pretium orci et eros eleifend, sit amet lacinia metus facilisis. Fusce luctus felis eget laoreet consequat. Donec viverra eros tellus, ac viverra ligula lobortis ut. Fusce in euismod neque. Sed vitae tempus purus. Proin lacinia diam vel turpis hendrerit, eu convallis quam tristique. Praesent sagittis lobortis est nec finibus. In facilisis in velit eu euismod.
+
+                        Etiam eu libero sed orci ultricies molestie. In dignissim ipsum non arcu cursus ultrices. Maecenas dictum tortor id odio blandit, quis semper lectus venenatis. Aliquam condimentum suscipit nisl ut sollicitudin. Curabitur malesuada tellus nec felis imperdiet suscipit. Donec non varius nisl, at rhoncus lacus. Curabitur venenatis placerat massa sed porta. Vivamus ac sem vestibulum, fermentum mauris in, rutrum diam. Nulla at blandit neque. Sed id pharetra ante. Nullam faucibus diam at mattis sollicitudin.</p><p>
+                        
+                        Nullam id magna efficitur, tempus neque eget, eleifend odio. Donec sit amet ex sed ipsum condimentum eleifend et quis turpis. Maecenas elementum auctor porttitor. Vestibulum gravida orci at eros congue posuere. Nam eget posuere quam. In eget dapibus massa, ultrices finibus lorem. Aliquam erat volutpat. Nam fermentum, est et sollicitudin tristique, leo elit luctus metus, et cursus neque nisi sed nisi. Donec commodo ultrices elit non efficitur. Ut luctus tristique leo eget maximus. Integer laoreet, nulla a vulputate sollicitudin, magna ipsum venenatis risus, sed aliquet tellus lorem sed nisi. Aenean ac molestie massa. Etiam et posuere leo. Etiam varius orci et aliquam molestie. Sed rutrum sed massa in dapibus.</p><p>
+                        
+                        Duis et ipsum a purus iaculis tempor a in sapien. Fusce nisl quam, facilisis eget facilisis ut, lacinia a velit. Pellentesque et leo sed erat cursus tristique non eget mi. Suspendisse ex mi, rutrum eu purus nec, efficitur suscipit enim. Aliquam in libero ut elit mollis ullamcorper. Duis vitae rhoncus nunc. In sit amet fermentum turpis, sed interdum felis. Cras at enim et velit dictum molestie eget congue neque.
+                        
+                        Praesent aliquam nisl nec velit tempus, nec cursus ante fermentum. Integer sed neque orci. Suspendisse hendrerit lacus libero, quis lacinia elit feugiat in. Cras ultricies tempus laoreet. Duis interdum dignissim sollicitudin. Proin tempor ligula vitae ipsum interdum ultricies. Curabitur iaculis luctus mi, et molestie nisi convallis eget. In hac habitasse platea dictumst. Nunc eu feugiat eros. Morbi vitae quam in sem fringilla lobortis. Proin et nisi vitae lectus pharetra semper vel eget leo. Curabitur tempus a sem quis cursus. Ut ut dapibus libero. Maecenas tincidunt, lectus id pretium auctor, metus nunc rutrum leo, eget venenatis dui diam in mi. Sed sit amet congue nulla, pretium faucibus lacus.</p>
+                    <div class="clearfix"></div>
+                </article>
+
+        </section>
+
+
+        <!--barra lateral-->
+        <aside id="sidebar">
+            <div id="nav-blog" class="sidebar-item">
+                <h3>Puedes hacer esto</h3>
+                <a href="#" class="btn btn-success">Crear artículo</a>
+            </div>
+            <div id="search" class="sidebar-item">
+                <h3>Buscador</h3>
+                <p>Encuentra el artículo que buscas</p>
+                <form action="">
+                    <input type="text" name="search"/>
+                    <input type="submit" name="submit" value="Buscar" class="btn"/>
+                </form>
+            </div>
+        </aside>
+        <div class="clearfix"></div>
+    </div>
+
+    <footer id="footer">
+        <div class="center">
+            <p>
+                &copy; Lucía Arena
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

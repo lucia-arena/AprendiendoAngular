@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquetación para el master en Frameworks de JavaScipt</title>
+    <link rel="stylesheet" href="assets/CSS/styles.css">
+    <!--en el head van metadatos-->
+</head>
+<body>
+    <!--en el body todo lo que verá el usuario-->
+    <header id="header">
+        <!--Etiqueta para centrar el contenido-->
+        <div class="center">
+
+            <!--Logo -->
+            <div id="logo">
+                <img src="assets/images/angular.svg" class="app-logo" alt="Logotipo"/>
+                <span id="brand">
+                    <strong>Curso</strong>Angular
+                </span>
+            </div>   
+            <!--Menú de navegación-->
+            <!--el nav es la etiqueta para los links que llevan a otras páginas--> 
+            <nav id="menu">
+                <ul>
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="formulario.html">Formulario</a>
+                    </li>
+                    <li>
+                        <a href="#">Página 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Página 2</a>
+                    </li>
+                </ul>
+            </nav>
+            <!--limpiar flotados para que no haya superposiciones-->
+            <div class="clearfix"></div>
+        </div>
+    </header>
+    <div id="slider" class="slider-big">
+        <h1>Bienvenido a mi página web</h1>
+        <a href="#" class="btn-white">Ir al blog</a>
+    </div>
+
+    <div class="center">
+        <section id="content">
+            <h2 class="subheader">Artículos recientes</h2>
+
+            <!--Listado de artículos-->
+            <div id="articles">
+                <article class="article-item" id="article-template">
+                    <div class="image-wrap">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.C-kEwv98RxpRl-82WZHU6wHaEm%26pid%3DApi&f=1" alt="Paisaje">
+                    </div>
+                    <h2>Artículo de prueba</h2>
+                    <span class="date">Hace 5 minutos</span>
+                    <a href="#">Leer más</a>
+                    <div class="clearfix"></div>
+                </article>
+                <!--Añadir artículos con JS-->
+            </div>
+        </section>
+
+        <script type="text/javascript">
+            var template =document.getElementById("article-template");
+            var articles = document.getElementById("articles");
+
+            for(var i=1; i<=5; i++){
+                var clonado = template.cloneNode(true);
+                clonado.removeAttribute("id");
+                var h2= clonado.getElementsByTagName("h2")[0];
+                h2.innerHTML = h2.textContent + ' ' +i;
+                articles.appendChild(clonado);
+            }
+            </script>
+
+        <!--barra lateral-->
+        <aside id="sidebar">
+            <div id="nav-blog" class="sidebar-item">
+                <h3>Puedes hacer esto</h3>
+                <a href="#" class="btn btn-success">Crear artículo</a>
+            </div>
+            <div id="search" class="sidebar-item">
+                <h3>Buscador</h3>
+                <p>Encuentra el artículo que buscas</p>
+                <form action="">
+                    <input type="text" name="search"/>
+                    <input type="submit" name="submit" value="Buscar" class="btn"/>
+                </form>
+            </div>
+        </aside>
+        <div class="clearfix"></div>
+    </div>
+
+    <footer id="footer">
+        <div class="center">
+            <p>
+                &copy; Lucía Arena
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
